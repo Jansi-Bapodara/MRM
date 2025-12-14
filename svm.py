@@ -16,10 +16,10 @@ class SVM:
     def fit(self, X, y):
         n_samples, n_features = X.shape
         
-        # Convert labels to -1 and 1
+       
         y_ = np.where(y <= 0, -1, 1)
 
-        # Init parameters
+       
         self.w = np.zeros(n_features)
         self.b = 0
 
